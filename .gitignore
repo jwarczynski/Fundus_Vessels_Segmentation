@@ -1,3 +1,7 @@
+# folder with images
+# to download from https://www5.cs.fau.de/research/data/fundus-images/
+data/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
