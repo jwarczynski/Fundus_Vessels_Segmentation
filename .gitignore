@@ -2,6 +2,7 @@
 # to download from https://www5.cs.fau.de/research/data/fundus-images/
 data/*
 .idea/
+.vscode/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
