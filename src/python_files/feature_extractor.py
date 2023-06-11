@@ -20,10 +20,14 @@ class FeatureExtractor:
         return self.features
 
     def add_edge_features(self):
+        self.add_original_image()
         self.add_canny_edges()
         self.add_roberts_edges()
         self.add_sobel_edges()
         self.add_scharr_edges()
+
+    def add_original_image(self):
+        self.features['Original Image'] = self.preprocessed_img.flatten()
 
     def add_canny_edges(self):
         canny_edges = cv2.Canny(self.preprocessed_img, 100, 200)
