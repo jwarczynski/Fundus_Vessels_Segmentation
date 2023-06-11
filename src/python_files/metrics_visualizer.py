@@ -22,8 +22,8 @@ class MetricsVisualizer:
     def calculate_metrics(self):
         self.TP = np.sum(np.logical_and(self.ground_truth == 255, self.predicted == 255))
         self.TN = np.sum(np.logical_and(self.ground_truth == 0, self.predicted == 0))
-        self.FP = np.sum(np.logical_and(self.ground_truth == 0, self.predicted == 255))
-        self.FN = np.sum(np.logical_and(self.ground_truth == 255, self.predicted == 0))
+        self.FP = np.sum(np.logical_and(self.ground_truth == 0, self.predicted != 0))
+        self.FN = np.sum(np.logical_and(self.ground_truth == 255, self.predicted != 255))
 
         self.accuracy = (self.TP + self.TN) / (self.TP + self.TN + self.FP + self.FN)
         self.sensitivity = self.TP / (self.TP + self.FN)
