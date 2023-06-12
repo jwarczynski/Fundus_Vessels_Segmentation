@@ -17,10 +17,12 @@
     - `random_forest.ipynb` - notebook z sgemntacją naczyń krwionośnych za pomocą modelu lasu losowego
     - `recognition.ipynb` - notebook zawierający rozpoznawanie naczyń krwionośnych standardowymi metodami przetwarzania obrazu
     - `U_net_vessels_segmentation.ipynb` - notebook zawierający segmentację naczyń krwionośnych za pomocą modelu U-net
+    -  `methods_comparison.ipynb` - notebook zawierający porównanie metod wraz z wizualizacją wyników
 - `models` - folder zawierający wytrenowane modele
   - `random_forest` - folder zawierający modele lasu losowego
   - `U_net` - folder zawierający modele U-net
 - `segmented` - folder zawierający wygenrowane przez modele maski naczyń krwionośnych
+- `results` - folder zawierający wyniki w pliku csv
 
 ## Opis projektu
 Implementację różnych metod wykrywania naczyń kriwonoścych w obrazach siatkówki oka.
